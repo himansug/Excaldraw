@@ -1,0 +1,144 @@
+/* Reset default margin and padding for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    background-color: #f2f2f2;
+}
+
+/* Set the root container to take the full height and disable user-select */
+#root {
+    height: 100%;
+    user-select: none;
+}
+
+/* Style for icons in the toolbar */
+.ToolIcon__icon>svg {
+    width: 20px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.ToolIcon__icon :hover{
+    border-radius: 5px;
+    background-color: #c5c4ea;
+}
+/* Style for vertical separator lines */
+.vertical-line {
+    border-left: 2px solid #f2f2f2;
+    height: 30px;
+}
+
+/* Style for keybinding text */
+.ToolIcon__keybinding {
+    color: rgb(185, 183, 183);
+    font-size: 10px;
+}
+
+/* Style for the stackHorizontal toolbar */
+.stackHorizontal {
+    background-color: white;
+}
+
+/* Right-aligned content in the fixedSideContainer */
+.right {
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Styles for the sidebar-trigger container */
+.secLeft {
+    padding: 6.5px;
+}
+
+/* Container for the fixed side menu and toolbar */
+.fixedSideContainer {
+    margin: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-between;
+}
+
+/* Style for ilandAppToolBar */
+.ilandAppToolBar {
+    border: 0px solid rgb(141, 136, 136);
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the left app menu icon */
+.app-menu-left {
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.903);
+    padding: 1px;
+    color: rgb(0, 0, 0);
+}
+.rounded,.material-symbols-outlined{
+    cursor: pointer;  
+}
+/* Style for the "Join" button */
+.join {
+    background-color: #5b57d1 !important;
+    color: white !important;
+}
+
+/* Style for the zoom-related buttons and separators */
+.zoom {
+    gap: 10px;
+    color: black !important;
+}
+
+/* Style for verified user icon */
+.veri-color {
+    fill: #5b57d1 !important;
+    color: #1811ee;
+}
+
+/* Style for the help icon and text */
+.que-icon {
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.903);
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    font-size: small;
+}
+
+/* Optional: Add a hover effect for the button */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#bottom-right {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/* HintViewer styles */
+.HintViewer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    padding-top: -50px;
+}
+
+/* Customize canvas style as needed */
+canvas {
+    background-color: white;
+    cursor: crosshair;
+}
+
